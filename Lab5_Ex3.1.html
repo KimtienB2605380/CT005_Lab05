@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lợi ích của công nghệ số trong học tập</title>
+		<title>La Thị Kim Tiên | Sản phẩm thực hành 05</title>
 	<style>
 		:root {
 			color-scheme: light;
@@ -50,6 +50,50 @@
 			font-size: 1.25rem;
 		}
 
+		.profile {
+			margin: 24px 0 30px;
+			padding: 20px 22px;
+			background: #edf5f3;
+			border-left: 4px solid #176b67;
+		}
+
+		.profile h2,
+		.products > h2 {
+			margin-top: 0;
+		}
+
+		.profile dl {
+			display: grid;
+			grid-template-columns: max-content 1fr;
+			gap: 8px 18px;
+			margin: 0;
+			line-height: 1.6;
+		}
+
+		.profile dt {
+			font-weight: 700;
+		}
+
+		.profile dd {
+			margin: 0;
+		}
+
+		.product-link {
+			display: inline-block;
+			padding: 10px 14px;
+			color: #145c58;
+			font-weight: 700;
+			text-decoration-thickness: 1px;
+			text-underline-offset: 3px;
+			background: #edf5f3;
+			border: 1px solid #c9ded9;
+			border-radius: 4px;
+		}
+
+		.product-link:hover {
+			background: #e0efeb;
+		}
+
 		.infographic {
 			display: block;
 			width: 100%;
@@ -92,6 +136,15 @@
 			main {
 				padding: 22px 16px;
 			}
+
+			.profile dl {
+				grid-template-columns: 1fr;
+				gap: 2px;
+			}
+
+			.profile dd {
+				margin-bottom: 8px;
+			}
 		}
 	</style>
 </head>
@@ -102,22 +155,43 @@
 			<p>Công nghệ số giúp người học tiếp cận kiến thức nhanh chóng, học tập linh hoạt ở mọi nơi và khai thác nhiều tài liệu đa dạng. Các công cụ trực tuyến còn hỗ trợ trao đổi, hợp tác và cá nhân hóa quá trình học.</p>
 		</header>
 
-		<section aria-labelledby="infographic-title">
-			<h2 id="infographic-title">Infographic</h2>
-			<img class="infographic" src="Lab05_Ex2.1.png" alt="Infographic về lợi ích của công nghệ số trong học tập">
+		<section class="profile" aria-labelledby="profile-title">
+			<h2 id="profile-title">Thông tin cá nhân</h2>
+			<dl>
+				<dt>Họ và tên</dt>
+				<dd>La Thị Kim Tiên</dd>
+				<dt>MSSV</dt>
+				<dd>B2605380</dd>
+				<dt>Lớp học phần</dt>
+				<dd>CT005D04</dd>
+			</dl>
 		</section>
 
-		<section aria-labelledby="video-title">
-			<h2 id="video-title">Video</h2>
-			<div class="video-frame">
-				<iframe
-					src="https://www.youtube.com/embed/tig-ROTvAZs"
-					title="Video về công nghệ số trong học tập"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					referrerpolicy="strict-origin-when-cross-origin"
-					allowfullscreen>
-				</iframe>
-			</div>
+		<section class="products" aria-labelledby="products-title">
+			<h2 id="products-title">Sản phẩm thực hành</h2>
+
+			<section aria-labelledby="document-title">
+				<h2 id="document-title">Bài thực hành 1.2</h2>
+				<a class="product-link" href="Lab5_Ex1.2.pdf" target="_blank" rel="noopener">Mở Lab5_Ex1.2.pdf</a>
+			</section>
+
+			<section aria-labelledby="infographic-title">
+				<h2 id="infographic-title">Infographic</h2>
+				<img class="infographic" src="Lab05_Ex2.1.png" alt="Infographic về lợi ích của công nghệ số trong học tập">
+			</section>
+
+			<section aria-labelledby="video-title">
+				<h2 id="video-title">Video</h2>
+				<div class="video-frame">
+					<iframe
+						src="https://www.youtube.com/embed/tig-ROTvAZs"
+						title="Video về công nghệ số trong học tập"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen>
+					</iframe>
+				</div>
+			</section>
 		</section>
 
 		<footer>
